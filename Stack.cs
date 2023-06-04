@@ -24,6 +24,31 @@ namespace Data_Structure___Stack_and_Queue
             top = newNode;
         }
 
+        // UC2 - Pop and Peek element from stack
+        public void Pop()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is empty");
+            }
+            else
+            {
+                top = top.Next;
+            }
+        }
+
+        public void Peek()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is empty");
+            }
+            else
+            {
+                Console.WriteLine("Top element of stack is " + top.Data);
+            }
+        }
+
         public void Display()
         {
             if (top == null)

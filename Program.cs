@@ -6,6 +6,7 @@ namespace Data_Structure___Stack_and_Queue
     {
         public static void Main(string[] args)
         {
+            // Stack Data Structure
             Stack stack = new Stack();
 
             stack.Push(70);
@@ -13,6 +14,15 @@ namespace Data_Structure___Stack_and_Queue
             stack.Push(56);
 
             stack.Display();
+
+            Console.WriteLine("");
+            stack.Pop();
+
+            stack.Display();
+
+            Console.WriteLine("");
+
+            stack.Peek();
         }
     }
 }
