@@ -23,6 +23,24 @@ namespace Data_Structure___Stack_and_Queue
             Console.WriteLine("");
 
             stack.Peek();
+
+            Console.WriteLine("");
+            stack.Pop();
+
+            stack.Display();
+
+            Console.WriteLine("");
+
+            stack.Peek();
+
+            Console.WriteLine("");
+            stack.Pop();
+
+            stack.Display();
+
+            Console.WriteLine("");
+
+            stack.Peek();
         }
     }
 }
