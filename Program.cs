@@ -57,6 +57,12 @@ namespace Data_Structure___Stack_and_Queue
             Console.WriteLine("");
             queue.Display();
 
+            Console.WriteLine("");
+
+            queue.Dequeue();
+
+            queue.Display();
+
         }
     }
 }

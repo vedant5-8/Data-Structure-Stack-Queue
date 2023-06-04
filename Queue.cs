@@ -28,6 +28,18 @@ namespace Data_Structure___Stack_and_Queue
             }
         }
 
+        // UC4 - delete an element
+        public void Dequeue()
+        {
+            if (front == null)
+            {
+                Console.WriteLine("Queue is empty.");
+            }
+            else
+            {
+                front = front.Next;
+            }
+        }
         public void Display()
         {
             if (front == null)
