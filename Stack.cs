@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace Data_Structure___Stack_and_Queue
 {
-    internal class Stack
+    internal class Stack<T> where T : IComparable<T>
     {
         // UC1 - create a Stack
 
-        Node top;
+        Node<T> top;
 
         public Stack()
         {
             top = null;
         }
 
-        public void Push(int data)
+        public void Push(T data)
         {
-            Node newNode = new Node(data);
+            Node<T> newNode = new Node<T>(data);
             newNode.Next = top;
             top = newNode;
         }
@@ -57,7 +57,7 @@ namespace Data_Structure___Stack_and_Queue
             }
             else
             {
-                Node temp = top;
+                Node<T> temp = top;
                 while (temp != null)
                 {
                     Console.WriteLine("| " + temp.Data + " |");

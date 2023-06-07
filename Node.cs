@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Data_Structure___Stack_and_Queue
 {
-    internal class Node
+    internal class Node<T> where T : IComparable<T>
     {
-        public int Data;
-        public Node Next;
-        public Node(int data)
+        public T Data;
+        public Node<T> Next;
+        public Node(T data)
         {
             this.Data = data;
             Next = null;

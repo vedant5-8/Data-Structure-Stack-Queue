@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Data_Structure___Stack_and_Queue
 {
-    internal class Queue
+    internal class Queue<T> where T : IComparable<T>
     {
 
         // UC3 - Create a queue
-        Node front;
-        Node rear;
+        Node<T> front;
+        Node<T> rear;
 
-        public void Enqueue(int data)
+        public void Enqueue(T data)
         {
-            Node newNode = new Node(data);
+            Node<T> newNode = new Node<T>(data);
             if (front == null)
             {
                 rear = newNode; 
@@ -48,7 +48,7 @@ namespace Data_Structure___Stack_and_Queue
             }
             else
             {
-                Node temp = front;
+                Node<T> temp = front;
                 while (temp != null)
                 {
                     Console.WriteLine("| " + temp.Data + " |");

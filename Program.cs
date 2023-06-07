@@ -6,9 +6,10 @@ namespace Data_Structure___Stack_and_Queue
     {
         public static void Main(string[] args)
         {
-            /*
+            
             // Stack Data Structure
-            Stack stack = new Stack();
+            
+            Stack<int> stack = new Stack<int>();
 
             stack.Push(70);
             stack.Push(30);
@@ -27,6 +28,7 @@ namespace Data_Structure___Stack_and_Queue
 
             // execute pop and peek operation untill stack is empty
 
+            
             Console.WriteLine("");
             stack.Pop();
 
@@ -44,11 +46,11 @@ namespace Data_Structure___Stack_and_Queue
             Console.WriteLine("");
 
             stack.Peek();
-            */
+            
 
             // Queue Data Structure
 
-            Queue queue = new Queue();
+            Queue<int> queue = new Queue<int>();
 
             queue.Enqueue(56);
             queue.Enqueue(30);
